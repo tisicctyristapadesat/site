@@ -21,7 +21,7 @@ h1 {
     font-size: 3em;
     margin-bottom: 20px;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px #00ffe0;
+    text-shadow: 0 0 10px #dfe0e0;
 }
 
 .tags {
@@ -39,16 +39,16 @@ h1 {
 .github {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #00ffe0;
+    border: 2px solid #e1e9e8;
     border-radius: 30px;
-    color: #00ffe0;
+    color: #ebf1f1;
     text-decoration: none;
     transition: 0.3s;
     margin-top: 15px;
 }
 
 .github:hover {
-    background: #00ffe0;
+    background: #ffffff;
     color: #000;
 }
 
