@@ -18,38 +18,43 @@ body {
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #dfe0e0;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px #00ffe7, 0 0 30px #00ffe7;
+    animation: fadeInDown 1s ease-out;
 }
 
 .tags {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .tags span {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 10px 20px;
     border-radius: 30px;
-    margin: 0 5px;
+    margin: 0 7px;
     font-size: 1em;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .github {
     display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #e1e9e8;
+    padding: 12px 25px;
+    border: 2px solid #00ffe7;
     border-radius: 30px;
-    color: #ebf1f1;
+    color: #00ffe7;
     text-decoration: none;
-    transition: 0.3s;
-    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #00ffe7;
 }
 
 .github:hover {
-    background: #ffffff;
+    background: #00ffe7;
     color: #000;
+    box-shadow: 0 0 20px #00ffe7;
 }
 
 .stars {
@@ -61,7 +66,38 @@ h1 {
     left: 0;
     z-index: 0;
 }
+
 .content {
     z-index: 1;
     position: relative;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.03);
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 25px rgba(0, 255, 231, 0.1);
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Animace */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
