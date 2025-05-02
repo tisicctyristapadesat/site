@@ -12,7 +12,10 @@ for (let i = 0; i < 120; i++) {
     star.style.background = 'white';
     star.style.borderRadius = '50%';
     star.style.opacity = Math.random();
-    star.style.animation = `twinkle ${Math.random() * 5 + 5}s infinite ease-in-out`;
+
+    // ZRYCHLENÁ animace – 2 až 4 sekundy
+    const speed = Math.random() * 2 + 2;
+    star.style.animation = `twinkle ${speed}s infinite ease-in-out`;
 
     starsContainer.appendChild(star);
 }
