@@ -113,12 +113,12 @@ h1 {
     }
 }
 
-/* Rychlý pohyb hvězd (horizontal) */
-@keyframes move {
+/* Rotace kolem středu */
+@keyframes rotateAround {
     0% {
-        transform: translateX(0);
+        transform: rotate(0deg);
     }
     100% {
-        transform: translateX(100vw); /* přesune hvězdy přes celou šířku obrazovky */
+        transform: rotate(360deg);
     }
 }
