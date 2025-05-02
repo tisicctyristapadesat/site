@@ -13,9 +13,9 @@ for (let i = 0; i < 200; i++) { // více hvězd (200)
     star.style.borderRadius = '50%';
     star.style.opacity = Math.random();
 
-    // Extra rychlá animace – 1 až 2.5 sekundy pro blikání
-    const blinkSpeed = Math.random() * 1.5 + 1;
-    star.style.animation = `twinkle ${blinkSpeed}s infinite ease-in-out, move ${Math.random() * 2 + 1}s linear infinite`;
+    // Blikání zůstává beze změny
+    const blinkSpeed = Math.random() * 3 + 2;  // Blikání na 2–5 sekund
+    star.style.animation = `twinkle ${blinkSpeed}s infinite ease-in-out, move ${Math.random() * 3 + 3}s linear infinite`; // Rychlý pohyb
 
     starsContainer.appendChild(star);
 }
