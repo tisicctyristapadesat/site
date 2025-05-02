@@ -112,3 +112,13 @@ h1 {
         opacity: 0.5;
     }
 }
+
+/* Rychlý pohyb hvězd (horizontal) */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw); /* přesune hvězdy přes celou šířku obrazovky */
+    }
+}
